@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud">
+            <h1>TETRIS</h1>
+            <div class="score-container">
+                <h2>SCORE</h2>
+                <span id="score">0</span>
+            </div>
+            <div class="time-container">
+                <h2>TIME</h2>
+                <span id="time">00:00</span>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas id="tetris" height="600" width="300"></canvas>
+            <div id="game-overlay">
+                <div class="instructions">
+                    <h2>HOW TO PLAY</h2>
+                    <p><span>&larr;</span> Move Left</p>
+                    <p><span>&rarr;</span> Move Right</p>
+                    <p><span>&darr;</span> Move Down</p>
+                    <p><span>&uarr;</span> Rotate</p>
+                </div>
+                <button id="start-button">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-controls">
+        <button id="left-btn">&larr;</button>
+        <button id="rotate-btn">&#8635;</button>
+        <button id="right-btn">&rarr;</button>
+        <button id="down-btn">&darr;</button>
+    </div>
+
+    <div id="toast"></div>
+
+    <div class="footer">
+        <h3>&#169; Ishaan</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
